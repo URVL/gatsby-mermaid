@@ -1,10 +1,20 @@
 ---
-title: "Sub Page"
+title: "Mermaid Example"
 metaTitle: "Syntax Highlighting is the meta title tag for this page"
 metaDescription: "This is the meta description for this page"
 ---
 
+import {TestDiagram} from "@components/diagrams"
+import {
+  exampleClassDiagram,
+  exampleFlowchartDiagram
+} from "./exampleDiagram"
+
 The following is a code block with JavaScript language syntax highlighting.
+
+<TestDiagram title={"Class Diagram"} diagramStr={exampleClassDiagram} />
+
+<TestDiagram title={"Flowchart Diagram"} diagramStr={exampleFlowchartDiagram} />
 
 ```javascript
 import React from 'react';
